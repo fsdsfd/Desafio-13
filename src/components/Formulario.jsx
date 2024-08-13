@@ -36,13 +36,13 @@ const Formulario = ({agregarProducto, productoAEditar, editarProducto }) => {
   return (
     <div>
           <h2>Formulario de { productoAEditar ? 'edición' : 'creación'}</h2>
-    <form className='w-75 border bg-body-secondary border-danger rounded-3 p-4' onSubmit={handleSubmit}>
-        <div className="mb-3">
+    <form className='w-75 border bg-body-secondary border-danger rounded-3 p-4 text-center' onSubmit={handleSubmit}>
+        <div className="mb-3 " >
             {/* Campo nombre */}
-            <label htmlFor="lbl-nombre" className="form-label">Nombre</label>
+            <label htmlFor="lbl-nombre" className="form-label ">Nombre</label>
             <input 
             type="text" 
-            className="form-control" 
+            className="form-control " 
             id="lbl-nombre" 
             placeholder="Ingrese el nombre" 
             name='nombre'
